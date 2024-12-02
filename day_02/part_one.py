@@ -12,6 +12,6 @@ for line in input:
     
     if (is_increasing or is_decreasing) and difference_constraint: counter += 1
 
-print(counter)
+print(f"there are {counter} safe reports")
 
 
