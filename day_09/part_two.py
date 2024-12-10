@@ -1,14 +1,12 @@
 input = open("day_09\input.txt", "r").read()
 
 disk_map = []
-space_lengths = []
 
 i = 0
 while i < len(input):
     disk_map += [int(input[i]) * [i // 2]]
     try: 
         disk_map += [int(input[i + 1]) * ['.']]
-        space_lengths += [int(input[i + 1])]
     except: pass
     i += 2
 
