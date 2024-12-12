@@ -54,5 +54,6 @@ for i in range(len(input)):
             sides = []
             explore(input[i][j], i, j)
             total += area * calculate_sides(sides)
+            
 print(f"The total price of fencing all the regions is {total}")
 
