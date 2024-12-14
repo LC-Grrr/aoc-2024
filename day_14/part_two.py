@@ -17,22 +17,6 @@ def apply_vector(vector, positions):
         currently_occupied.add((pos[0], pos[1]))
     return new_positions
 
-def count_quadrants():
-    quadrant_amounts = [0,0,0,0]
-    for vector in vector_dict:
-        for pos in vector_dict[vector]:
-            if pos[0] < (DIMS[0] - 1) / 2:
-                if pos[1] < (DIMS[1] - 1) / 2:
-                    quadrant_amounts[0] += 1
-                elif pos[1] > (DIMS[1] - 1) / 2:
-                    quadrant_amounts[1] += 1
-            elif pos[0] > (DIMS[0] - 1) / 2:
-                if pos[1] < (DIMS[1] - 1) / 2:
-                    quadrant_amounts[2] += 1
-                elif pos[1] > (DIMS[1] - 1) / 2:
-                    quadrant_amounts[3] += 1
-    return quadrant_amounts
-
 for line in input:
     numbers = [int(x) for x in re.findall('-?\d+', line)]
     try: vector_dict[(numbers[2], numbers[3])] += [[numbers[0], numbers[1]]]
