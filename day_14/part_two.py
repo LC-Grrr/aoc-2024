@@ -47,7 +47,7 @@ while True:
         break
     i += 1
 
-print(f"After 100 seconds the safety factor will be {i}")
+print(f"{i} seconds elapse before the robots display the easter egg")
 
 
 
