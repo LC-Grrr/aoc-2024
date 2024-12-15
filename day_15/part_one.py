@@ -53,4 +53,4 @@ for i in range(len(warehouse_map)):
         if warehouse_map[i][j] == "O":
             total += 100 * i + j
 
-print(total)
+print(f"The sum of all boxes' GPS coordinates is {total}")
