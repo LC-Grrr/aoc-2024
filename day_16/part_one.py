@@ -33,7 +33,7 @@ while queue.qsize() > 0:
     queue.put((score + 1000, (pos, dir_ind - 1)))
     queue.put((score + 1000, (pos, dir_ind + 1)))
 
-print(f"The lowest score a reindeer could possible get is {total}")
+print(f"The lowest score a reindeer could possibly get is {total}")
 
     
     
